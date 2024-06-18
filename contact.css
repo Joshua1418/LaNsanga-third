@@ -1,0 +1,424 @@
+/*Mobile First(320px) */
+html{
+    scroll-behavior: smooth;
+} 
+body{
+    margin: 0;
+    font-family:sans-serif;
+}
+.loader{
+    text-align: center;
+    background-color: white;
+    padding-top: 14em;
+    z-index: 100;
+    padding-bottom: 19em;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+.loader p{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+   color:#11212D; 
+}
+.myHeader{
+    display: flex;
+    top: 0;
+    height: 4.5rem;
+    width: 100%;
+    box-shadow: 0 0em 0.7em 0em rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    white-space: nowrap; 
+}
+.myHeader img{
+    margin-top: 1.2em;
+    margin-left: 4.5em;
+    height: 2em;
+    width: 2;
+}
+.myHeader h2{
+    padding-left:1.5rem ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #11212D;   
+}
+.slidenav{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -2.1em;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden ;
+    padding-top:0em ;
+    transition:0.4s ; 
+}
+.slidenav img{
+    margin-left: 16.5em;
+    height: 2.1em;
+    margin-top: 1.1em;
+    width: 2.1;
+    z-index: 1;
+}
+.slidenav a{
+    text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    text-decoration: none;
+    font-size:1.2em ;
+    color:rgb(0, 0, 0);
+    display: block; 
+    white-space: nowrap;
+    transition: 0.5s;
+}
+ .slidenav a:hover{
+    color:rgb(67, 67, 58);
+ }
+ .slidenav h2{
+    display: none;   
+}
+.containersecond{
+    background-color: #91988A;
+    color: white;
+    padding-top: 4.1em;
+    padding-bottom: 4.1em;
+    margin-top: 5em;
+    margin-bottom: 0rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.01em;
+    font-size: 1em;
+}
+containersecond h3{
+    padding: 0.5rem 1em;
+}
+.contact{
+    background:beige;
+    color: rgb(0, 0, 0);
+    padding-top: 1em;
+    padding-bottom: 4.1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 6.5em;
+    margin-bottom:0em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-width:0 0  0 0.2em  ;
+    border-color: #11212D;
+    z-index: 1;
+}
+.contact h2{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #11212D;
+    font-weight: bolder;
+}
+.footer{
+    background-color:#11212D;
+    color: white;
+    font-size:0.9rem;
+    height:30%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer span{
+    border-style: solid ;
+    border-width:0 0 0 0.1em ;
+    padding-left: 0.9em;
+}
+/*Mobile First(360px) */
+@media (min-width:360px) {
+    .myHeader img{
+       margin-left:7em; 
+    }
+    .slidenav img{
+        margin-left: 19em;
+    }
+    .slidenav a{
+        padding-top: 1em;
+        font-size:1.5rem;
+    }
+}
+/*Mobile First(375px) */
+@media (min-width:375px) {
+    .myHeader img{
+        margin-left:7.5em;
+    }
+    .slidenav img{
+        margin-left: 19.5em;
+    }
+    .slidenav a{
+        padding-top: 1em;
+    }
+}
+/* Mobile First (425px) */
+@media (min-width:425px) {
+
+    .myHeader img{
+        margin-left:11em;
+    }
+    .slidenav img{
+        margin-left: 23em;
+    }
+}
+/* Mobile First (425px) */
+@media (min-width:520px) {
+    .loader{
+        padding-top: 18em;
+    }
+    .myHeader img{
+        margin-left:17em;
+    }
+    .slidenav img{
+        margin-left: 29em;
+    }
+}
+/* Mobile First (600px)*/ 
+@media (min-width:600px) {
+    .loader{
+        padding-top: 20em;
+    }
+    .myHeader img{
+      
+        margin-left:22em;
+    }
+    .slidenav img{
+        margin-left: 34em;
+    }
+}
+/* Mobile First (659px)*/ 
+@media (min-width:659px) {
+    .loader{
+      
+        padding-top: 25em;
+    }
+    .myHeader img{
+        margin-left:25em;
+    }
+    .slidenav img{
+        margin-left: 37em;
+    }
+}
+/* Tablet Screen */
+@media (min-width:768px) {
+    .loader{
+        padding-top: 30em;
+    }
+    .myHeader img{
+        margin-left:30.5em;
+        height: 2.5em;
+        width: 2.5;   
+    }
+    .slidenav img{
+        margin-left: 42.7em;
+        height: 2.5em;
+        width: 2.5;
+    }
+    .slidenav a{
+        text-align: center;
+        padding-top: 1.5em;
+        text-decoration: none;
+        font-size:1.7em ;
+        letter-spacing: 0.12em;
+    }
+    .slidenav h2{
+        display: block;
+        border-style: solid;
+        border-width: 0 0 0.1em 0;
+        padding-top: 5em;
+        padding-bottom: 0.5em;
+        text-align: center;
+        margin: 1.5em;
+        font-style: normal;
+        font-size: 1.5em;
+    }    
+}
+/* Mobile First (999px)*/ 
+@media (min-width:999px) {
+
+    .loader{
+        padding-top: 15em;
+        font-size: 1em;
+    }
+    .slidenav{
+        height: 100%;
+        width: 24%;
+        background-color: #f5f7f3;
+        display: flex;
+        flex-direction: column;
+        overflow-y: visible;
+        z-index: -1;
+        white-space: nowrap;
+        padding-top:5em ;
+        position: fixed;
+        margin-left: 0em; 
+    }
+    .slidenav a{
+        text-align: center;
+        padding-top: 3em;
+        padding-left: 1em;
+        font-size:1em ;
+        display: inline-block; 
+        transition:0.7s ;  
+    }
+    .slidenav img{
+        display: none;
+    }
+    .slidenav h2{
+        display: none;
+    }
+    .myHeader{
+        height: 7em;
+        z-index: 100;
+        box-shadow: 0 0 0.5rem 0rem rgba(0, 0, 0, 0.45);
+    }
+    .myHeader img{
+      display: none;
+    }
+    .myHeader h2{
+        display: block;
+        background-color: #91988A;
+        margin-top: 0;
+        padding-top: 1.5em;
+        padding-bottom: 3.2em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+    .containersecond{
+  
+        width: 76%;
+        margin-left: 15em;
+        margin-bottom: 0em;
+    }
+    .containersecond h3{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .footer{
+       display: flex;
+        height:10em;   
+    }
+    .footer P{
+        padding-top: 3em;
+    }
+}
+/* Computer Screen*/
+@media (min-width:1024px){
+
+    .loader{
+        padding-top: 15em;
+        font-size: 1em;
+        z-index: 100;
+    }
+    .slidenav{
+        height: 100%;
+        width: 27.5%;
+        background-color: #f5f7f3;
+        display: flex;
+        flex-direction: column;
+        overflow-y: visible;
+        z-index: -1;
+        padding-top:5em ;
+        position: fixed;
+        margin-left: 0em; 
+        margin-top: -12em;
+    }
+    .slidenav a{
+        text-align: center;
+        padding-top: 2em;
+        padding-left: 1em;
+        font-size:1.2em ;
+        display: inline-block; 
+        transition:0.7s ;  
+    }
+   
+    .myHeader{
+        height: 7em;
+        z-index: 1;
+        justify-content: flex-end;
+        display: flex;
+        background: none;
+        box-shadow: none;
+    }
+ 
+    .myHeader h2{
+        display: block;
+        background: none;
+        margin-top: 0;
+        padding-top: 1.5em;
+        padding-bottom: 3.2em;
+        padding-right: 2.3em;
+        padding-left: 2.5em;
+    }
+    .containersecond{
+        width: 73%;
+        margin-left: 17.5em;
+    }
+    .contact{
+        margin-left: 20em;
+        margin-top: 7em;
+     
+    .footer{
+       display: flex;
+        height:10em;
+    }
+    .footer P{
+        padding-top: 3em;
+    }
+}
+/* Computer Screen*/
+@media (min-width:1280px){
+    .loader{
+        z-index: 100;
+        padding-top: 20em;
+    }
+    .myHeader{
+        justify-content: flex-end;
+        box-shadow: none;
+        background: none;
+    }
+    .myHeader h2{
+        background-color:none;
+    }
+    .slidenav{
+        width: 22%;
+        margin-top: -12em;
+       
+    }
+    .containersecond{
+        width: 78%;
+        margin-left: 17.5em;
+    }
+    .contact{
+       margin-left: 19em;
+    }
+}
+/* Computer Screen */
+@media (min-width:1920px){
+    .loader{
+        padding-top: 15em;
+        font-size: 1em;
+    }
+    .slidenav{
+        width: 14.6%;
+    }
+    .contact{
+       width: 60%;
+       margin-left: 31em;
+     }
+    .containersecond{
+        width: 85.3%;
+    }
+}
+
+}
